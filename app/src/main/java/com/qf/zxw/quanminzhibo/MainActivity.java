@@ -12,7 +12,7 @@ import com.qf.zxw.quanminzhibo.fragment.WodeFragment;
 import com.qf.zxw.quanminzhibo.fragment.ZhiBoFragment;
 
 public class MainActivity extends AppCompatActivity {
-    //第一次提交
+    //第一次提交2222
     RadioGroup rg;
     FragmentManager manager;
     @Override
