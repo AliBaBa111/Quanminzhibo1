@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,8 +7,25 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-         />
+        android:gravity="center"
+        android:text="栏目"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/lanmu_sousuo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/text"
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</FrameLayout>
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

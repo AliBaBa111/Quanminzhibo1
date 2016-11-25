@@ -12,17 +12,18 @@ import com.qf.zxw.quanminzhibo.fragment.WodeFragment;
 import com.qf.zxw.quanminzhibo.fragment.ZhiBoFragment;
 
 public class MainActivity extends AppCompatActivity {
-    //第一次提交2222
     RadioGroup rg;
     FragmentManager manager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //dfghjkldgj
         setContentView(R.layout.activity_main);
         rg= (RadioGroup) findViewById(R.id.rg);
         manager=getSupportFragmentManager();
         ((RadioButton)rg.getChildAt(0)).setChecked(true);
         manager.beginTransaction().replace(R.id.ll,new MainFragment()).commit();
+
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -42,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        int position = getIntent().getIntExtra("position",0);
+        if(position==1){
+            ((RadioButton)rg.getChildAt(1)).setChecked(true);
+            manager.beginTransaction().replace(R.id.ll,new LanmuFragment()).commit();
+        }
 
     }
 }

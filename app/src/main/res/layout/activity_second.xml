@@ -1,27 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#0f0"
-    android:orientation="vertical"
-    >
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context="com.example.administrator.quanmingzhibo.SecondActivity">
     <android.support.v7.widget.Toolbar
-        android:id="@+id/zhibo_toolbar"
-        android:background="#00f"
-        app:title="直播"
+        android:background="#0f0"
+        android:id="@+id/second_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </android.support.v7.widget.Toolbar>
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/zhibo_recycleView"
+        android:id="@+id/second_recycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </android.support.v7.widget.RecyclerView>
-
 
 </LinearLayout>
